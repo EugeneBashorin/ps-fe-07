@@ -13,17 +13,17 @@
     <!--Header-->
     <header>
         <div class="container header-container">
-            <nav class="nav-container">
-                <a href="#" class="logo"><span>Web</span>Studio</a>
-                <ul class="site-nav list item-nav-container">
-                    <li><a href="/index.html" class="link">Студия</a></li>
-                    <li><a hhref="" class="link current">Портфолио</a></li>
-                    <li><a href="" class="link">Контакты</a></li>
+            <nav class="main-nav">
+                <a href="#" class="logo logo--rightIndent"><span class="logo__prepend">Web</span>Studio</a>
+                <ul class="list main-nav__list">
+                    <li class="main-nav__item"><a href="/index.html" class="link main-nav__link">Студия</a></li>
+                    <li class="main-nav__item"><a href="" class="link main-nav__link main-nav__link--current">Портфолио</a></li>
+                    <li class="main-nav__item"><a href="" class="link main-nav__link">Контакты</a></li>
                 </ul>            
             </nav>
-            <ul class="site-contact list item-contact-nav-container">
-                <li class="contactlist-item"><a href="mailto:info@devstudio.com" class="link contact-link"><svg class="mail-icon"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a></li>
-                <li class="contactlist-item"><a href="tel:+38096111111" class="link contact-link"><svg class="tel-icon"><use href="./images/icons.svg#smartphone"></use></svg>+38 (096) 111-11-11</a></li>
+            <ul class="nav-contact list">
+                <li class="nav-contact__item"><a href="mailto:info@devstudio.com" class="link contact-link"><svg class="mail-icon"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a></li>
+                <li class="nav-contact__item"><a href="tel:+38096111111" class="link contact-link"><svg class="tel-icon"><use href="./images/icons.svg#smartphone"></use></svg>+38 (096) 111-11-11</a></li>
             </ul>
         </div>
     </header>
@@ -32,121 +32,121 @@
         <!--Portfolio-->
         <section class="section">
             <div class="container">
-                <h1 class="section-title hide-title">Примеры работ</h1>
-                <ul class="portfolio-filtr list">
-                    <li><a href="" class="link link-button active">Все</a></li>
-                    <li><a href="" class="link link-button disable">Веб-сайты</a></li>
-                    <li><a href="" class="link link-button disable">Приложения</a></li>
-                    <li><a href="" class="link link-button disable">Дизайн</a></li>
-                    <li><a href="" class="link link-button disable">Маркетинг</a></li>
+                <h1 class="section__title section__title--hidden">Примеры работ</h1>
+                <ul class="product-tab list">
+                    <li class="product-tab__item"><button type="button" href="#" class="button product-tab__button product-tab__button--active">Все</button></li>
+                    <li class="product-tab__item"><button type="button" href="#" class="button product-tab__button product-tab__button--disable">Веб-сайты</button></li>
+                    <li class="product-tab__item"><button type="button" href="#" class="button product-tab__button product-tab__button--disable">Приложения</button></li>
+                    <li class="product-tab__item"><button type="button" href="#" class="button product-tab__button product-tab__button--disable">Дизайн</button></li>
+                    <li class="product-tab__item"><button type="button" href="#" class="button product-tab__button product-tab__button--disable">Маркетинг</button></li>
                 </ul>
-                <ul class="list portfolio-cases">
-                    <li>
-                        <div class="portfolio-img-overlay">
-                            <img src="./images/portfolio-1.jpg" alt="Разработка Веб сайтов">
-                            <div class="portfolio-discript">
+                <ul class="list grid portfolio-cases">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-1.jpg" alt="Разработка Веб сайтов">
+                            <div class="grid__discription">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
                         </div>
-                        <div class="project-container">
-                            <p class="project">Технокряк</p>
-                            <p class="project-content">Веб-сайт</p>
+                        <div class="grid__meta">
+                            <p class="grid__title">Технокряк</p>
+                            <p class="grid__subtitle">Веб-сайт</p>
                         </div>
                     </li>
-                    <li>
-                        <div class="portfolio-img-overlay">
-                            <img src="./images/portfolio-2.jpg" alt="Разработка постеров и банерной рекламы">
-                            <div class="portfolio-discript">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-2.jpg" alt="Разработка постеров и банерной рекламы">
+                            <div class="grid__discription">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
                         </div>                  
-                        <div class="project-container">
-                        <p class="project">Постер New Orlean vs Golden Star</p>
-                        <p class="project-content">Дизайн</p>
+                        <div class="grid__meta">
+                        <p class="grid__title">Постер New Orlean vs Golden Star</p>
+                        <p class="grid__subtitle">Дизайн</p>
                     </div>
                     </li>
-                    <li>
-                        <div class="portfolio-img-overlay">
-                            <img src="./images/portfolio-3.jpg" alt="Разработка мобилльных приложений">
-                            <div class="portfolio-discript">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-3.jpg" alt="Разработка мобилльных приложений">
+                            <div class="grid__discription">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
                         </div>    
-                        <div class="project-container">
-                        <p class="project">Ресторан Seafood</p>
-                        <p class="project-content">Приложение</p>
+                        <div class="grid__meta">
+                        <p class="grid__title">Ресторан Seafood</p>
+                        <p class="grid__subtitle">Приложение</p>
                     </div>
                     </li>
-                    <li>
-                        <div class="portfolio-img-overlay">
-                            <img src="./images/portfolio-4.jpg" alt="Разработка дизайна продукции">
-                            <div class="portfolio-discript">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-4.jpg" alt="Разработка дизайна продукции">
+                            <div class="grid__discription">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
                         </div>    
-                        <div class="project-container">
-                        <p class="project">Проект Prime</p>
-                        <p class="project-content">Маркетинг</p>
+                        <div class="grid__meta">
+                        <p class="grid__title">Проект Prime</p>
+                        <p class="grid__subtitle">Маркетинг</p>
                     </div>
                     </li>
-                    <li>
-                        <div class="portfolio-img-overlay">
-                            <img src="./images/portfolio-5.jpg" alt="Разработка дизайна упаковки">
-                            <div class="portfolio-discript">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-5.jpg" alt="Разработка дизайна упаковки">
+                            <div class="grid__discription">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
                         </div>    
-                        <div class="project-container">
-                        <p class="project">Проект Boxes</p>
-                        <p class="project-content">Приложение</p>
+                        <div class="grid__meta">
+                        <p class="grid__title">Проект Boxes</p>
+                        <p class="grid__subtitle">Приложение</p>
                     </div>
                     </li>
-                    <li>
-                        <div class="portfolio-img-overlay">
-                            <img src="./images/portfolio-6.jpg" alt="Поиск идеи для продвижения">
-                            <div class="portfolio-discript">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-6.jpg" alt="Поиск идеи для продвижения">
+                            <div class="grid__discription">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
                         </div>    
-                        <div class="project-container">
-                        <p class="project">Inspiration has no Borders</p>
-                        <p class="project-content">Веб-сайт</p>
+                        <div class="grid__meta">
+                        <p class="grid__title">Inspiration has no Borders</p>
+                        <p class="grid__subtitle">Веб-сайт</p>
                     </div>
                     </li>
-                    <li>
-                        <div class="portfolio-img-overlay">
-                            <img src="./images/portfolio-7.jpg" alt="Разработка уникального дизайна продукции">
-                            <div class="portfolio-discript">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-7.jpg" alt="Разработка уникального дизайна продукции">
+                            <div class="grid__discription">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
                         </div>    
-                        <div class="project-container">
-                        <p class="project">Издание Limited Edition</p>
-                        <p class="project-content">Дизайн</p>
+                        <div class="grid__meta">
+                        <p class="grid__title">Издание Limited Edition</p>
+                        <p class="grid__subtitle">Дизайн</p>
                     </div>
                     </li>
-                    <li>
-                        <div class="portfolio-img-overlay">
-                            <img src="./images/portfolio-8.jpg" alt="Разработка макетов">
-                            <div class="portfolio-discript">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-8.jpg" alt="Разработка макетов">
+                            <div class="grid__discription">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
                         </div>    
-                        <div class="project-container">
-                        <p class="project">Проект LAB</p>
-                        <p class="project-content">Маркетинг</p>
+                        <div class="grid__meta">
+                        <p class="grid__title">Проект LAB</p>
+                        <p class="grid__subtitle">Маркетинг</p>
                     </div>
                     </li>
-                    <li>
-                        <div class="portfolio-img-overlay">
-                            <img src="./images/portfolio-9.jpg" alt="Поиск точек роста вашего бизнеса">
-                            <div class="portfolio-discript">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-9.jpg" alt="Поиск точек роста вашего бизнеса">
+                            <div class="grid__discription">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                             </div>
                         </div>    
-                        <div class="project-container">
-                        <p class="project">Growing Business</p>
-                        <p class="project-content">Приложение</p>
+                        <div class="grid__meta">
+                        <p class="grid__title">Growing Business</p>
+                        <p class="grid__subtitle">Приложение</p>
                     </div>
                     </li>
                 </ul>
@@ -155,36 +155,51 @@
     </main>
     <!--footer-->
     <footer>
-        <div class="footer-container container">
-            <ul class="footer-list list">
-                <li>
-                    <p class="logo"><span>Web</span>Studio</p>
-                    <address class="adress">
-                        <ul class="footer-contact list">
-                            <li><span>г.Киев, пр-т Леси Украинки, 26</span></li>
-                            <li><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
-                            <li><a class="footer-link" href="tel:+380991111111">+38 (099) 111-11-11</a></li>
+        <section class="section footer">
+            <div class="container">
+                <ul class="list footer__list">
+                    <li class="footer__item">
+                        <p class="logo footer__logo"><span class="logo__prepend">Web</span>Studio</p>
+                        <address class="adress">
+                            <ul class="footer-contact list">
+                                <li><span class="footer-contact__discript">г.Киев, пр-т Леси Украинки, 26</span></li>
+                                <li><a class="footer-contact__link" href="mailto:info@example.com">info@example.com</a></li>
+                                <li><a class="footer-contact__link" href="tel:+380991111111">+38 (099) 111-11-11</a></li>
+                            </ul>
+                        </address>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__title">присоединяйтесь</p>
+                        <ul class="list smm">
+                            <li class="smm__item">
+                                <a href="#" class="smm__link smm__link--grey"><svg class="smm__icon"><use href="./images/icons.svg#instagram"></use></svg></a>
+                            </li>
+                            <li class="smm__item">
+                                <a href="#" class="smm__link smm__link--grey"><svg class="smm__icon"><use href="./images/icons.svg#twitter"></use></svg></a>
+                            </li>
+                            <li class="smm__item">
+                                <a href="#" class="smm__link smm__link--grey"><svg class="smm__icon"><use href="./images/icons.svg#facebook"></use></svg></a>
+                            </li>
+                            <li class="smm__item">
+                                <a href="#" class="smm__link smm__link--grey"><svg class="smm__icon"><use href="./images/icons.svg#linkedin"></use></svg></a>
+                            </li>
                         </ul>
-                    </address>
-                </li>
-                <li>
-                    <p class="footer-second-discript">присоединяйтесь</p>
-                    <ul class="list social-media-list">
-                        <li class="icon-block"><a href="#" class="common-smm-link footer-smm-link"><svg class="smm-icon"><use href="./images/icons.svg#instagram"></use></svg></a></li>
-                        <li class="icon-block"><a href="#" class="common-smm-link footer-smm-link"><svg class="smm-icon"><use href="./images/icons.svg#twitter"></use></svg></a></li>
-                        <li class="icon-block"><a href="#" class="common-smm-link footer-smm-link"><svg class="smm-icon"><use href="./images/icons.svg#facebook"></use></svg></a></li>
-                        <li class="icon-block"><a href="#" class="common-smm-link footer-smm-link"><svg class="smm-icon"><use href="./images/icons.svg#linkedin"></use></svg></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <p class="footer-third-discript">подпишитесь на рассылку</p>
-                    <form name="form-subscribe" action="submit">
-                        <input type="email" class="footer-input" name="email" placeholder="E-mail" required>
-                        <button type="submit" class="button-subscribe">Подписаться<svg width="24" height="24"><use href="./images/icon-send.svg#icon-send"></use></svg></button>
-                    </form>
-                </li>
-            </ul>   
-        </div>
-        </footer>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__title">подпишитесь на рассылку</p>
+                        <form name="form-subscribe" class="footer__form" action="submit">
+                            <input type="email" class="footer__input" name="email" placeholder="E-mail" required>
+                            <button type="submit" class="button">
+                                <span class="button__label">Подписаться</span>
+                                <svg class="button__icon" width="24" height="24">
+                                    <use href="./images/icon-send.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </li>
+                </ul>   
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
