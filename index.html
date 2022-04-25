@@ -8,6 +8,7 @@
     <title>WebStudio - IT решения для бизнеса</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <!--Header-->
@@ -22,22 +23,22 @@
                 </ul>            
             </nav>
             <ul class="nav-contact list">
-                <li class="nav-contact__item"><a href="mailto:info@devstudio.com" class="link contact-link"><svg class="mail-icon"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a></li>
-                <li class="nav-contact__item"><a href="tel:+38096111111" class="link contact-link"><svg class="tel-icon"><use href="./images/icons.svg#smartphone"></use></svg>+38 (096) 111-11-11</a></li>
+                <li class="nav-contact__item"><a href="mailto:info@devstudio.com" class="link nav-contact__link"><svg class="mail-icon"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a></li>
+                <li class="nav-contact__item"><a href="tel:+38096111111" class="link nav-contact__link"><svg class="tel-icon"><use href="./images/icons.svg#smartphone"></use></svg>+38 (096) 111-11-11</a></li>
             </ul>
         </div>
     </header>
     <!--main-->
     <main>
-        <!--Heroes-->
-        <section class="heroes-section">
-            <div class="container heroes">
-                <h1 class="heroes-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button order-button" data-modal-open><span class="button__label">Заказать услугу</span></button>
+        <!--Hero-->
+        <section class="section-hero">
+            <div class="container hero">
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="order-button" data-modal-open><span class="button__label">Заказать услугу</span></button>
             </div>
         </section>
         <!--Advantage-->
-        <section class="section">
+        <section class="section advantage">
             <div class="container">
                 <h2 class="section__title section__title--hidden">Преимущества WebStudio</h2>
                 <ul class="advantage__list list">
@@ -168,7 +169,7 @@
          <!--Our Clients-->
         <section class="section clients">
             <div class="container">
-                <h2 class="section__title">Наши постоянные клиенты</h2>
+                <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="clients__list list">
                     <li class="clients__item">
                         <a href="#" class="clients__link">
@@ -223,7 +224,7 @@
                 <ul class="list footer__list">
                     <li class="footer__item">
                         <p class="logo footer__logo"><span class="logo__prepend">Web</span>Studio</p>
-                        <address class="adress">
+                        <address class="footer__adress">
                             <ul class="footer-contact list">
                                 <li><span class="footer-contact__discript">г.Киев, пр-т Леси Украинки, 26</span></li>
                                 <li><a class="footer-contact__link" href="mailto:info@example.com">info@example.com</a></li>
@@ -252,7 +253,7 @@
                         <p class="footer__title">подпишитесь на рассылку</p>
                         <form name="form-subscribe" class="footer__form" action="submit">
                             <input type="email" class="footer__input" name="email" placeholder="E-mail" required>
-                            <button type="submit" class="button">
+                            <button type="submit" class="button-footer">
                                 <span class="button__label">Подписаться</span>
                                 <svg class="button__icon" width="24" height="24">
                                     <use href="./images/icon-send.svg#icon-send"></use>
@@ -297,7 +298,7 @@
                     </label>
                 </div>
                 <div class="button-container">
-                    <button type="submit" class="button"><span class="button__label">Отправить</span></button>
+                    <button type="submit" class="modal__button"><span class="button__label">Отправить</span></button>
                 </div>
             </form>
         </div>

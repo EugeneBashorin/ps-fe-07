@@ -8,6 +8,7 @@
     <title>WebStudio - IT решения для бизнеса</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <!--Header-->
@@ -22,8 +23,8 @@
                 </ul>            
             </nav>
             <ul class="nav-contact list">
-                <li class="nav-contact__item"><a href="mailto:info@devstudio.com" class="link contact-link"><svg class="mail-icon"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a></li>
-                <li class="nav-contact__item"><a href="tel:+38096111111" class="link contact-link"><svg class="tel-icon"><use href="./images/icons.svg#smartphone"></use></svg>+38 (096) 111-11-11</a></li>
+                <li class="nav-contact__item"><a href="mailto:info@devstudio.com" class="link nav-contact__link"><svg class="mail-icon"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a></li>
+                <li class="nav-contact__item"><a href="tel:+38096111111" class="link nav-contact__link"><svg class="tel-icon"><use href="./images/icons.svg#smartphone"></use></svg>+38 (096) 111-11-11</a></li>
             </ul>
         </div>
     </header>
@@ -34,11 +35,11 @@
             <div class="container">
                 <h1 class="section__title section__title--hidden">Примеры работ</h1>
                 <ul class="product-tab list">
-                    <li class="product-tab__item"><button type="button" class="button product-tab__button product-tab__button--disable">Веб-сайты</button></li>
-                    <li class="product-tab__item"><button type="button" class="button product-tab__button product-tab__button--active">Все</button></li>
-                    <li class="product-tab__item"><button type="button" class="button product-tab__button product-tab__button--disable">Приложения</button></li>
-                    <li class="product-tab__item"><button type="button" class="button product-tab__button product-tab__button--disable">Дизайн</button></li>
-                    <li class="product-tab__item"><button type="button" class="button product-tab__button product-tab__button--disable">Маркетинг</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Веб-сайты</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--active">Все</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Приложения</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Дизайн</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Маркетинг</button></li>
                 </ul>
                 <ul class="list grid portfolio-cases">
                     <li class="grid__item">
@@ -189,7 +190,7 @@
                         <p class="footer__title">подпишитесь на рассылку</p>
                         <form name="form-subscribe" class="footer__form" action="submit">
                             <input type="email" class="footer__input" name="email" placeholder="E-mail" required>
-                            <button type="submit" class="button">
+                            <button type="submit" class="button-footer">
                                 <span class="button__label">Подписаться</span>
                                 <svg class="button__icon" width="24" height="24">
                                     <use href="./images/icon-send.svg#icon-send"></use>
